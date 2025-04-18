@@ -35,7 +35,10 @@ const HomeScreen = () => {
                     <FontAwesome5 name="tractor" size={24} color="#4CAF50" />
                     <Text style={styles.actionButtonText}>Book Equipment</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.actionButton}>
+                <TouchableOpacity
+                    style={styles.actionButton}
+                    onPress={() => router.push("/labourhire")}
+                >
                     <FontAwesome5 name="users" size={24} color="#4CAF50" />
                     <Text style={styles.actionButtonText}>Hire Labour</Text>
                 </TouchableOpacity>
